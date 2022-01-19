@@ -1,0 +1,23 @@
+@import "./reset";
+@import "./body";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Open+Sans&display=swap");
+
+//variables
+$teal: #66e2dc;
+$orange: #fa7453;
+$mustard: #ffb964;
+$offWhite: #fcfaf9;
+$dark: rgb(25, 24, 38);
+
+#navigation {
+  position: absolute;
+  z-index: 999999999;
+  .nav-wrapper {
+    margin-left: 2em;
+  }
+  #back1 {
+    max-width: 100%;
+    height: 20rem;
+    z-index: -1;
+  }
+}
