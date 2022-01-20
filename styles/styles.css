@@ -11,26 +11,127 @@ body {
 }
 
 body {
-  min-height: 100vh;
-  overflow: hidden;
-  background: url("/assets/bg-main-desktop.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
+  font-family: "IBM-Plex-Sans", sans-serif !important;
 }
 
 #navigation {
-  position: absolute;
-  z-index: 999999999;
+  font-weight: bold;
 }
 
-#navigation .nav-wrapper {
-  margin-left: 2em;
+#para-image {
+  width: 1020px;
+  min-height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
-#navigation #back1 {
-  max-width: 100%;
-  height: 20rem;
-  z-index: -1;
+video {
+  min-width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+h2 {
+  font-weight: bold;
+  color: #191826;
+}
+
+p {
+  color: #191826;
+  font-size: 1.2em;
+}
+
+.card-panel {
+  background-color: #fa7453;
+  border-radius: 8px;
+  margin-top: 1em;
+}
+
+.card-panel h4,
+.card-panel h3 {
+  font-weight: bold;
+  color: #fcfaf9;
+}
+
+.card-panel span {
+  color: #fcfaf9;
+  line-height: 2.125em;
+}
+
+.card-panel #custom-1 {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+#icon {
+  border-radius: 8px;
+  width: 100%;
+  font-weight: bold;
+}
+
+#icon #device {
+  margin-left: 4px;
+}
+
+#features {
+  background-image: url("/assets/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#contact {
+  background-image: url("/assets/bg-main-desktop.png");
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+#phone {
+  padding-top: 1em;
+  width: 100%;
+  height: auto;
+}
+
+#medias {
+  margin: 2em;
+}
+
+footer {
+  margin-top: 5em;
+}
+
+footer p {
+  margin-top: 1em;
+}
+
+footer #email {
+  text-decoration: none;
+  font-weight: bold;
+  color: #191826;
+}
+
+footer {
+  background-image: url("/assets/bg-main-desktop.png");
+  background-repeat: repeat;
+  background-size: 50%;
+  background-image: url("/assets/bg-pattern-1.svg");
+  background-repeat: repeat;
+  background-size: 100vw;
+}
+
+footer .row {
+  margin-bottom: 0;
+}
+
+#socials {
+  background-image: url("/assets/bg-pattern-2.svg");
+  background-repeat: repeat;
+  background-size: cover;
+  margin-top: 6em;
+}
+
+#socials img {
+  padding: 1em;
 }
 /*# sourceMappingURL=styles.css.map */

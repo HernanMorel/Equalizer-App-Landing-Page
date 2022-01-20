@@ -10,12 +10,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Compiled and minified JavaScript -->
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <!--Custom JavaScript-->
-  <script defer src="js/main.js"></script>
-  <!--Icon-->
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <!--Google-Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,43 +20,133 @@
   <title>Equalizer Landing Page</title>
 </head>
 
-<body>
-
-  <header id="navigation">
-    <nav class="navbar-fixed">
-      <nav class="transparent z-depth-0">
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo left"><img src="assets/logo.svg" alt="equalizer logo"></a>
-          <img class="right" id="back1" src="/assets/bg-pattern-1.svg" alt="">
+<body id="home" class="scrollspy">
+  <header>
+    <div class="navbar-fixed">
+      <nav class="indigo lighten-5">
+        <div class="nav-wrapper container">
+          <a href="#" class="brand-logo"><img id="logo" src="assets/logo.svg" alt="brand"></a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a id="navigation" class="black-text" href="#home">Home</a></li>
+            <li><a id="navigation" class="black-text" href="#features">Features</a></li>
+            <li><a id="navigation" class="black-text" href="#contact">Contact Us</a></li>
+          </ul>
         </div>
       </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+      <li><a id="navigation" href="#home">Home</a></li>
+      <li><a id="navigation" href="#features">Features</a></li>
+      <li><a id="navigation" href="#contact">Contact Us</a></li>
+    </ul>
   </header>
   <main>
-    <section class="info">
+    <section>
+      <div class="parallax-container">
+        <div class="parallax">
+          <img id="para-image" src="assets/image33.jpg" alt="img_parallax">
+        </div>
+      </div>
+    </section>
+    <section class="features" id="features">
       <div class="container">
-        <h1>We make your music sound extraordinary.</h1>
+        <div class="row">
+          <div class="features_description col s12 m8">
+            <h2 class="left">We make your music sound extraordinary.</h2>
+            <p>A system audio equalizer specifically designed for Android and iOS. Freely tune the way
+              your music sounds
+              with a professional grade parametric EQ & volume mixer. Control bass, mids, treble, gain control, reverb,
+              and more!</p>
+          </div>
+          <div class="features_card col s12 m4">
+            <div class="card-panel">
+              <h4>Premium EQ</h4>
+              <span> Get expert-level control with a robust equalizer, volume mixer, and spatial
+                audio. Take
+                your listening experience to a whole new level and access all our incredible features!
+              </span>
+              <span>
+                <h3>$4 <span id="custom-1">/month</span></h3>
+              </span>
+              <div class="center-align wrapper">
+                <span>
+                  <a id="icon" class=" btn-large black"><img class="center" src="assets/icon-apple.svg"
+                      alt="apple"><span id="device">
+                      iOS
+                    </span></a>
+                </span>
+              </div>
+              <br>
+              <div class="center-align wrapper">
+                <span>
+                  <a id="icon" class=" btn-large white ">
+                    <img src="assets/icon-android.svg" alt="android"> <span id="device" class="black-text"> Android
+                    </span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Video by Stef from Pexels-->
+    <section class="hero">
+      <div class="parallax-container">
+        <div class="parallax">
+          <video autoplay muted loop preload="auto" src="assets/v4.mp4"></video>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="scrollspy">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m4">
+            <img id="phone" src="assets/illustration-app.png" alt="">
+          </div>
+          <div class="col s12 m8 ">
+            <h2 class="right-align">Weekly updates and new features are being added monthly</h2>
+            <p class="right-align">Equalizer's FBQ Feedback Detection System instantly detects and
+              reveal troublesome frequencies. Once detected, an indicator associated with the corresponding band will
+              illuminate, allowing you to adjust your sound as required.</p>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
   </main>
-  <footer></footer>
-  <!-- We make your music sound extraordinary.
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6" id="copyright">
+          <img class="left" src="assets/logo.svg" alt="">
+          <br>
+          <br>
+          <p class="left-align"> All rights reserved © Equalizer 2021
+            <br>
+            Have any problems? Contact us via social media or
+            <br>
+            email us at <a id="email" href="#">equalizer@example.com</a>
+          </p>
+        </div>
+        <div class="col s12 m6">
+          <div class="container right-align" id="socials">
+            <!-- <a class="" href=""><img src="assets/icon-facebook.svg" alt=""></a>
+            <a href=""><img src="assets/icon-instagram.svg" alt=""> </a>
+            <a href=""> <img src="assets/icon-twitter.svg" alt=""></a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-  A system audio equalizer specifically designed for Android and iOS. Freely tune the 
-  way your music sounds with a professional grade parametric EQ & volume mixer. Control 
-  bass, mids, treble, gain control, reverb, and more!
 
-  Premium EQ
 
-  Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
-  your listening experience to a whole new level and access all our incredible features!
 
-  $4 / month
-
-  iOS Download
-  Android Download
-
-  All rights reserved © Equalizer 2021
-  Have any problems? Contact us via social media or email us at equalizer@example.com -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
