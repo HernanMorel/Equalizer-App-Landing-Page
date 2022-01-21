@@ -70,7 +70,7 @@ p {
 }
 
 #features {
-  background-image: url("/assets/bg-main-desktop.png");
+  background-image: url("assets/bg-main-desktop.png");
   background-repeat: no-repeat;
   background-size: contain;
   #android {
@@ -79,7 +79,7 @@ p {
 }
 
 #contacts {
-  background-image: url("/assets/bg-main-desktop.png");
+  background-image: url("assets/bg-main-desktop.png");
   background-repeat: repeat;
   background-size: contain;
   #email {
@@ -105,17 +105,17 @@ p {
 }
 
 .deco-container {
-  background-image: url("/assets/bg-main-desktop.png");
+  background-image: url("assets/bg-main-desktop.png");
   background-repeat: repeat;
   background-size: 50%;
-  background-image: url("/assets/bg-pattern-1.svg");
+  background-image: url("assets/bg-pattern-1.svg");
   background-size: 100vw;
   #bottom-row {
     margin-bottom: 0px;
   }
 }
 #deco-background {
-  background-image: url("/assets/bg-pattern-2.svg");
+  background-image: url("assets/bg-pattern-2.svg");
   margin-top: 7.3em;
 }
 
