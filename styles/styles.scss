@@ -5,26 +5,32 @@
 //variables
 $teal: #66e2dc;
 $orange: #fa7453;
-$mustard: #ffb964;
 $offWhite: #fcfaf9;
 $dark: rgb(25, 24, 38);
 
+.navigation {
+  background-color: $teal;
+  opacity: 0.9;
+}
 #navigation {
   font-weight: bold;
 }
-
+.sidenav {
+  background-color: $teal;
+  opacity: 0.9;
+}
 #para-image {
-  width: 1020px;
+  width: 100vw;
   min-height: 1000px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100%;
 }
 video {
   min-width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100%;
 }
 
 h2 {
@@ -53,13 +59,13 @@ p {
     font-weight: normal;
     font-size: 15px;
   }
-}
-#icon {
-  border-radius: 8px;
-  width: 100%;
-  font-weight: bold;
-  #device {
-    margin-left: 4px;
+  #icon {
+    border-radius: 8px;
+    width: 100%;
+    font-weight: bold;
+    #device {
+      margin-left: 4px;
+    }
   }
 }
 
@@ -67,53 +73,90 @@ p {
   background-image: url("/assets/bg-main-desktop.png");
   background-repeat: no-repeat;
   background-size: contain;
+  #android {
+    color: $dark;
+  }
 }
 
-#contact {
+#contacts {
   background-image: url("/assets/bg-main-desktop.png");
   background-repeat: repeat;
   background-size: contain;
-}
-#phone {
-  padding-top: 1em;
-  width: 100%;
-  height: auto;
-}
-#medias {
-  margin: 2em;
-}
-
-footer {
-  margin-top: 5em;
-  p {
-    margin-top: 1em;
-  }
   #email {
     text-decoration: none;
     font-weight: bold;
     color: $dark;
   }
 }
+#phone {
+  padding-top: 1em;
+  width: 100%;
+  height: auto;
+}
 
-footer {
+#copyright {
+  margin-top: 17.5em;
+  a {
+    color: $orange;
+  }
+  #social-media {
+    padding: 15px;
+  }
+}
+
+.deco-container {
   background-image: url("/assets/bg-main-desktop.png");
   background-repeat: repeat;
   background-size: 50%;
   background-image: url("/assets/bg-pattern-1.svg");
-  background-repeat: repeat;
   background-size: 100vw;
-
-  .row {
-    margin-bottom: 0;
+  #bottom-row {
+    margin-bottom: 0px;
   }
 }
-#socials {
+#deco-background {
   background-image: url("/assets/bg-pattern-2.svg");
-  background-repeat: repeat;
-  background-size: cover;
-  margin-top: 6em;
+  margin-top: 7.3em;
+}
 
-  img {
-    padding: 1em;
+footer {
+  background-color: $teal;
+  opacity: 0.8;
+  padding-top: 3px;
+
+  span {
+    font-size: 17px;
+    font-weight: bold;
+    color: $dark;
+  }
+  a {
+    font-weight: bold;
+    text-decoration: none;
+    color: $dark;
+  }
+}
+
+@media only screen and (max-width: 1116px) {
+  #device {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #parallax-1 {
+    height: 20em;
+  }
+  #device {
+    display: contents;
+  }
+  #para-image {
+    object-fit: cover;
+  }
+  #parallax-2 {
+    height: 15em;
+  }
+  video {
+    width: 90%;
+    object-fit: contain;
   }
 }

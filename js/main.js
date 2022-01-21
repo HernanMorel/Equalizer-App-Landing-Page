@@ -6,5 +6,8 @@ const $ = (target) => {
 document.addEventListener('DOMContentLoaded', function(){
     M.Sidenav.init($('.sidenav'),{});
     M.Parallax.init($('.parallax'));
+   
 })
 
+const ss = document.querySelectorAll('.scrollspy');
+M.ScrollSpy.init(ss, {});

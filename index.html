@@ -4,6 +4,8 @@
 <head>
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Font-Awesome icons-->
+  <script src="https://kit.fontawesome.com/2cbe9f842e.js" crossorigin="anonymous"></script>
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <!-- Compiled and minified CSS -->
@@ -23,14 +25,14 @@
 <body id="home" class="scrollspy">
   <header>
     <div class="navbar-fixed">
-      <nav class="indigo lighten-5">
+      <nav class="navigation">
         <div class="nav-wrapper container">
           <a href="#" class="brand-logo"><img id="logo" src="assets/logo.svg" alt="brand"></a>
           <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a id="navigation" class="black-text" href="#home">Home</a></li>
             <li><a id="navigation" class="black-text" href="#features">Features</a></li>
-            <li><a id="navigation" class="black-text" href="#contact">Contact Us</a></li>
+            <li><a id="navigation" class="black-text" href="#contacts">Contact Us</a></li>
           </ul>
         </div>
       </nav>
@@ -38,18 +40,18 @@
     <ul class="sidenav" id="mobile-nav">
       <li><a id="navigation" href="#home">Home</a></li>
       <li><a id="navigation" href="#features">Features</a></li>
-      <li><a id="navigation" href="#contact">Contact Us</a></li>
+      <li><a id="navigation" href="#contacts">Contact Us</a></li>
     </ul>
   </header>
   <main>
     <section>
-      <div class="parallax-container">
+      <div class="parallax-container" id="parallax-1">
         <div class="parallax">
           <img id="para-image" src="assets/image33.jpg" alt="img_parallax">
         </div>
       </div>
     </section>
-    <section class="features" id="features">
+    <section class="features-section scrollspy" id="features">
       <div class="container">
         <div class="row">
           <div class="features_description col s12 m8">
@@ -71,9 +73,8 @@
               </span>
               <div class="center-align wrapper">
                 <span>
-                  <a id="icon" class=" btn-large black"><img class="center" src="assets/icon-apple.svg"
-                      alt="apple"><span id="device">
-                      iOS
+                  <a id="icon" class=" btn-large black"><i id="apple" class="fab fa-apple"></i><span id="device">
+                      Download
                     </span></a>
                 </span>
               </div>
@@ -81,7 +82,7 @@
               <div class="center-align wrapper">
                 <span>
                   <a id="icon" class=" btn-large white ">
-                    <img src="assets/icon-android.svg" alt="android"> <span id="device" class="black-text"> Android
+                    <i id="android" class="fab fa-android"></i><span id="device" class="black-text"> Download
                     </span>
                   </a>
                 </span>
@@ -93,13 +94,13 @@
     </section>
     <!-- Video by Stef from Pexels-->
     <section class="hero">
-      <div class="parallax-container">
+      <div class="parallax-container" id="parallax-2">
         <div class="parallax">
           <video autoplay muted loop preload="auto" src="assets/v4.mp4"></video>
         </div>
       </div>
     </section>
-    <section id="contact" class="scrollspy">
+    <section id="contacts" class="contact-section scrollspy">
       <div class="container">
         <div class="row">
           <div class="col s12 m4">
@@ -110,40 +111,40 @@
             <p class="right-align">Equalizer's FBQ Feedback Detection System instantly detects and
               reveal troublesome frequencies. Once detected, an indicator associated with the corresponding band will
               illuminate, allowing you to adjust your sound as required.</p>
+
+            <img id="copyright" class="right" src="assets/logo.svg" alt="logo">
+            <br>
+            <br>
+            <p id="copyright" class="right-align"> All rights reserved © Equalizer 2022
+              <br>
+              Have any problems? Contact us via social media or
+              <br>
+              email us at <a id="email" href="#">equalizer@example.com</a>
+              <br>
+              <a href=""><i id="social-media" class="fab fa-instagram fa-2x"></i></a>
+              <a href=""><i id="social-media" class="fab fa-facebook fa-2x"></i></a>
+              <a href=""><i id="social-media" class="fab fa-twitter fa-2x"></i></a>
+            </p>
           </div>
         </div>
       </div>
       </div>
     </section>
-  </main>
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m6" id="copyright">
-          <img class="left" src="assets/logo.svg" alt="">
-          <br>
-          <br>
-          <p class="left-align"> All rights reserved © Equalizer 2021
-            <br>
-            Have any problems? Contact us via social media or
-            <br>
-            email us at <a id="email" href="#">equalizer@example.com</a>
-          </p>
+    <div class="deco-container">
+      <div class="row" id="bottom-row">
+        <div class="col s12 m6">
         </div>
         <div class="col s12 m6">
-          <div class="container right-align" id="socials">
-            <!-- <a class="" href=""><img src="assets/icon-facebook.svg" alt=""></a>
-            <a href=""><img src="assets/icon-instagram.svg" alt=""> </a>
-            <a href=""> <img src="assets/icon-twitter.svg" alt=""></a> -->
+          <div class="container right-align" id="deco-background">
           </div>
         </div>
       </div>
     </div>
+  </main>
+  <footer class="black-text center">
+    <span>&copy; 2022, <a href="https://github.com/HernanMorel" target="_blank"><i class="fab fa-github"></i> Hernán
+        Morel</a></span>
   </footer>
-
-
-
-
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="js/main.js"></script>
